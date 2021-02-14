@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+// Abstracts
+@import "./styles/abstracts/functions";
+@import "./styles/abstracts/variables";
+
+// Vendors
+@import "./styles/vendor/bootstrap";
+@import "./styles/vendor/angular-material";
+
+// Base
+@import "./styles/base/reboot";
+@import "./styles/base/base";
+@import "./styles/base/helpers";
+@import "./styles/base/typography";
+

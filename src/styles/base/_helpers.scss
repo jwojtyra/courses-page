@@ -1,0 +1,139 @@
+// Helper classes
+//
+
+
+.opacity-75 {
+  opacity: .75 !important;
+}
+
+.opacity-66 {
+  opacity: .66 !important;
+}
+
+.opacity-5 {
+  opacity: .5 !important;
+}
+
+.opacity-33 {
+  opacity: .33 !important;
+}
+
+.opacity-25 {
+  opacity: .25 !important;
+}
+
+.opacity-0 {
+  opacity: 0 !important;
+}
+
+.font-size-base {
+  font-size: $font-size-base !important;
+}
+
+.font-size-sm {
+  font-size: $font-size-sm !important;
+}
+
+.font-size-lg {
+  font-size: $font-size-lg !important;
+}
+
+.font-family-base {
+  font-family: $font-family-base !important;
+}
+
+@each $color, $value in $theme-colors {
+  .fill-#{$color} {
+    fill: $value !important;
+  }
+}
+
+@each $color, $value in $colors {
+  .bg-#{$color} {
+    background-color: $value !important;
+  }
+}
+
+.bg-success-light {
+  background-color: map-get($mat-green, 50) !important;
+}
+
+.bg-primary-light {
+  background-color: map-get($app-primary, 50) !important;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($body-bg, .65);
+  z-index: $zindex-sticky;
+}
+
+.overlay-absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba($body-bg, .65);
+  z-index: $zindex-sticky;
+}
+
+.top {
+  top: 0 !important;
+}
+
+.right {
+  right: 0 !important;
+}
+
+.bottom {
+  bottom: 0 !important;
+}
+
+.left {
+  left: 0 !important;
+}
+
+.border-light {
+  border: $border-width solid $border-light-color !important;
+}
+
+.border-light-top {
+  border-top: $border-width solid $border-light-color !important;
+}
+
+.border-light-right {
+  border-right: $border-width solid $border-light-color !important;
+}
+
+.border-light-bottom {
+  border-bottom: $border-width solid $border-light-color !important;
+}
+
+.border-light-left {
+  border-left: $border-width solid $border-light-color !important;
+}
+
+.bg-body {
+  background-color: $body-bg !important;
+}
+
+.mb-grid-gutter {
+  margin-bottom: $grid-gutter-width !important;
+}
+
+.mt-grid-gutter {
+  margin-top: $grid-gutter-width !important;
+}
+
+.ml-grid-gutter {
+  margin-left: $grid-gutter-width !important;
+}
+
+.mr-grid-gutter {
+  margin-right: $grid-gutter-width !important;
+}
