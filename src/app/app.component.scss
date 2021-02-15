@@ -1,0 +1,27 @@
+@import "../styles/abstracts/variables";
+
+.logo {
+  display: inline-block;
+  font-family: $font-family-logo;
+  font-size: 30px;
+  background: linear-gradient(45deg, map-get($mat-purple, 200), map-get($mat-purple, 800));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+$game-size: 300px;
+$game-square-space: 8px;
+$game-square-size: floor($game-size / 3) - ($game-square-space * 2);
+
+.game {
+  width: $game-size;
+  height: $game-size;
+}
+
+.game__square {
+  display: inline-block;
+  float: left;
+  width: $game-square-size;
+  height: $game-square-size;
+  margin: $game-square-space;
+}
