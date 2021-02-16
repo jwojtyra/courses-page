@@ -1,15 +1,26 @@
 <section class="container">
-  <div style="height: 100vh;" class="d-flex align-items-center">
-    <header class="position-absolute top">
-      <div class="logo">&lt;/&gt;</div>
+  <div style="height: 100vh;" class="d-flex align-items-center position-relative">
+    <header class="header w-100 position-absolute top">
+      <mat-toolbar class="px-0 bg-white">
+        <div class="logo">&lt;/&gt;</div>
+
+        <nav class="ml-5 header__nav">
+          <a href="#">O nas</a>
+          <a href="#">Szkolenia</a>
+          <a href="#">Kontakt</a>
+        </nav>
+
+        <mat-icon class="ml-auto mr-3">phone</mat-icon>
+        <span class="header__phone">885-887-887</span>
+      </mat-toolbar>
     </header>
 
 
-    <div class="w-100 row">
+    <div class="row">
       <div class="col-8 d-flex align-items-center">
         <section>
           <h1 class="mb-2" style="font-size: 44px; line-height: 1.2; font-weight: 600;">Szkolenia z programowania</h1>
-          <p class="mb-6 lead font-weight-normal">
+          <p class="mb-5 lead font-weight-normal">
             Przeprowadzimy Cię przez pierwsze kroki jakie musi postawić każdy programista. Zaczniemy od instalacji i
             konfiguracji niezbędnych narzędzi do pracy, a skończymy na stworzeniu w pełni funkcjonalnej aplikacji.
           </p>
