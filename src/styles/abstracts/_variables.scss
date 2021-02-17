@@ -18,11 +18,13 @@ $colors: map-merge((
   "blue": map-get($mat-blue, 500),
   "indigo": map-get($mat-indigo, 500),
   "purple": map-get($mat-purple, 500),
+  "deep-purple": map-get($mat-deep-purple, 400),
   "pink": map-get($mat-pink, 500),
   "red": map-get($mat-red, 500),
   "orange": map-get($mat-orange, 500),
+  "deep-orange": map-get($mat-deep-orange, 500),
   "amber": map-get($mat-amber, 600),
-  "yellow": map-get($mat-yellow, 500),
+  "yellow": map-get($mat-yellow, 700),
   "green": map-get($mat-green, 500),
   "teal": map-get($mat-teal, 500),
   "cyan": map-get($mat-cyan, 500),
@@ -129,7 +131,7 @@ $headings-margin-bottom: $spacer / 2;
 $headings-font-family: null;
 $headings-font-weight: 500;
 $headings-line-height: 1.2;
-$headings-color: #231f20; // #231F20 from "ksiega-znaku.pdf"
+$headings-color: rgba(#000, .94);
 
 $text-muted: rgba(#000, .54);
 

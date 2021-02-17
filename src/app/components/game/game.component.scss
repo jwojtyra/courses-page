@@ -1,0 +1,57 @@
+@import "../../../styles/abstracts/variables";
+
+$game-size: 270px;
+$game-square-space: 6px;
+$game-square-size: floor($game-size / 3) - (($game-square-space * 4) / 3);
+
+:host {
+  width: $game-size + ($game-square-space * 2);
+  height: $game-size + ($game-square-space * 2);
+  margin-left: -$game-square-space;
+  margin-right: -$game-square-space;
+}
+
+.game__square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: $game-square-size;
+  height: $game-square-size;
+  margin: $game-square-space;
+  border-radius: $border-radius;
+  color: #fff;
+  font-size: 48px;
+}
+
+.game__square_pink {
+  background: linear-gradient(45deg, map-get($mat-pink, 300), map-get($mat-pink, 700));
+}
+
+.game__square_red {
+  background: linear-gradient(45deg, map-get($mat-red, 300), map-get($mat-red, 800));
+}
+
+.game__square_deep-orange {
+  background: linear-gradient(45deg, map-get($mat-deep-orange, 300), map-get($mat-deep-orange, 700));
+}
+
+.game__square_blue {
+  background: linear-gradient(45deg, map-get($mat-blue, 300), map-get($mat-blue, 700));
+}
+
+.game__square_deep-purple {
+  background: linear-gradient(45deg, map-get($mat-deep-purple, 300), map-get($mat-deep-purple, 700));
+}
+
+.game__square_yellow {
+  background: linear-gradient(45deg, map-get($mat-yellow, 400), map-get($mat-yellow, 800));
+}
+
+.game__square_green {
+  background: linear-gradient(45deg, map-get($mat-green, 300), map-get($mat-green, 700));
+}
+
+.game__square_cyan {
+  background: linear-gradient(45deg, map-get($mat-cyan, 400), map-get($mat-cyan, 700));
+}
