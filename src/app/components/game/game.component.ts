@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {faPhp, faJs, faAngular, faHtml5, faCss3, faSass, faGitAlt, faDocker} from '@fortawesome/free-brands-svg-icons';
+import {faPhp, faJs, faAngular, faHtml5, faCss3, faSass, faGitAlt, faJava} from '@fortawesome/free-brands-svg-icons';
 
 
 @Component({
@@ -15,5 +15,5 @@ export class GameComponent {
   public faCss = faCss3;
   public faSass = faSass;
   public faGit = faGitAlt;
-  public faDocker = faDocker;
+  public faJava = faJava;
 }
