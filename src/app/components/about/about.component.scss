@@ -1,0 +1,23 @@
+@import "~bootstrap/scss/mixins";
+@import "../../../styles/abstracts/variables";
+
+
+.about__person-list {
+  width: 100%;
+  max-width: 260px;
+  @include list-unstyled();
+
+  li {
+    display: flex;
+
+    + li {
+      border-top: 1px solid map-get($mat-gray, 300);
+      margin-top: map-get($spacers, 3);
+      padding-top: map-get($spacers, 3);
+    }
+
+    span:last-child {
+      margin-left: auto;
+    }
+  }
+}

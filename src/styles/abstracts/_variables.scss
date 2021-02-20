@@ -77,14 +77,14 @@ $body-color: #4d4d4d; // #4D4D4D from "ksiega-znaku.pdf"
 // Links
 
 $link-color: map-get($app-primary, 500);
-$link-decoration: underline;
+$link-decoration: none;
 $link-hover-color: map-get($app-primary, 700);
 $link-hover-decoration: underline;
 
 
 // Grid
 
-$grid-gutter-width: 16px;
+$grid-gutter-width: 32px;
 
 
 // Typography
@@ -93,8 +93,9 @@ $font-family-base: Poppins, "Helvetica Neue", sans-serif;
 $font-family-brand: Poppins, "Helvetica Neue", sans-serif;
 $font-family-logo: "Fredoka One", cursive;
 
-$font-size-base: 14px;
-$font-size-lg: 18px;
+$font-size-base: 16px;
+$font-size-lg: 16px;
+$font-size-xl: 18px;
 $font-size-sm: 12px;
 $font-size-tiny: 10px;
 
@@ -103,18 +104,18 @@ $font-weight-normal: 400;
 $font-weight-bold: 500;
 $font-weight-bolder: 600;
 
-$line-height-base: 1.42857;
+$line-height-base: 1.5;
 $line-height-large: 1.71429;
 
 $h1-font-size: 44px;
 $h1-font-weight: 600;
-$h1-line-height: 52px;
-$h2-font-size: 20px;
+$h1-line-height: 46px;
+$h2-font-size: 32px;
 $h2-font-weight: 600;
-$h2-line-height: 32px;
-$h3-font-size: 16px;
-$h3-font-weight: 500;
-$h3-line-height: 22px;
+$h2-line-height: 38px;
+$h3-font-size: 24px;
+$h3-font-weight: 600;
+$h3-line-height: 28px;
 $h4-font-size: 13px;
 $h4-font-weight: 600;
 $h4-line-height: 20px;
@@ -133,7 +134,7 @@ $headings-font-weight: 500;
 $headings-line-height: 1.2;
 $headings-color: rgba(#000, .94);
 
-$text-muted: rgba(#000, .54);
+$text-muted: map-get($mat-gray, 400);
 
 $paragraph-margin-bottom: $spacer;
 

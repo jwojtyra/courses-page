@@ -137,3 +137,10 @@
 .mr-grid-gutter {
   margin-right: $grid-gutter-width !important;
 }
+
+.paragraph-muted {
+  font-size: $font-size-sm;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+  color: $text-muted;
+}
