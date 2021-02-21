@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-about',
@@ -6,4 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent {
+  public faExternalLink = faExternalLinkAlt;
 }
