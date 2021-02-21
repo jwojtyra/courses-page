@@ -1,0 +1,39 @@
+@import "../../../styles/abstracts/variables";
+
+
+.courses__item {
+  overflow: hidden;
+  background: linear-gradient(45deg, map-get($mat-gray, 50), map-get($mat-gray, 100));
+  padding: map-get($spacers, 3);
+  font-size: $font-size-sm;
+}
+
+.courses__item-figure {
+  display: flex;
+  height: 100px;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 72px;
+}
+
+.courses__item-icon-wrap {
+  display: inline-block;
+  width: 16px;
+  text-align: center
+}
+
+.courses__item-figure_deep-purple {
+  background: linear-gradient(45deg, map-get($mat-deep-purple, 300), map-get($mat-deep-purple, 700));
+}
+
+.courses__item-figure_red {
+  background: linear-gradient(45deg, map-get($mat-red, 300), map-get($mat-red, 800));
+}
+
+.courses__item-heading {
+  font-size: $h4-font-size;
+  font-weight: $h4-font-weight;
+  line-height: $h4-line-height;
+}

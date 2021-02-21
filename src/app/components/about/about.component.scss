@@ -2,6 +2,10 @@
 @import "../../../styles/abstracts/variables";
 
 
+:host {
+  display: block;
+}
+
 .about__person-list {
   width: 100%;
   max-width: 360px;

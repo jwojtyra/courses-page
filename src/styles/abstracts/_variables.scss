@@ -48,7 +48,7 @@ $theme-colors: map-merge((
   "info": color("blue"),
   "warning": $color-warning,
   "danger": $color-danger,
-  "light": map-get($mat-gray, 50),
+  "light": map-get($mat-gray, 100),
   "dark": map-get($mat-gray, 900)
 ), $theme-colors);
 
@@ -96,7 +96,7 @@ $font-family-logo: "Fredoka One", cursive;
 $font-size-base: 16px;
 $font-size-lg: 16px;
 $font-size-xl: 18px;
-$font-size-sm: 12px;
+$font-size-sm: 14px;
 $font-size-tiny: 10px;
 
 $font-weight-light: 300;
@@ -116,9 +116,9 @@ $h2-line-height: 38px;
 $h3-font-size: 24px;
 $h3-font-weight: 600;
 $h3-line-height: 28px;
-$h4-font-size: 13px;
+$h4-font-size: 18px;
 $h4-font-weight: 600;
-$h4-line-height: 20px;
+$h4-line-height: 24px;
 
 $display1-font-size: 34px;
 $display1-font-weight: 600;

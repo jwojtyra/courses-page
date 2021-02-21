@@ -8,6 +8,8 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { GameComponent } from './components/game/game.component';
 import { CoverComponent } from './components/cover/cover.component';
 import { AboutComponent } from './components/about/about.component';
+import { ServicesComponent } from './components/services/services.component';
+import { CoursesComponent } from './components/courses/courses.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { AboutComponent } from './components/about/about.component';
     GameComponent,
     CoverComponent,
     AboutComponent,
+    ServicesComponent,
+    CoursesComponent,
   ],
   imports: [
     BrowserModule,
