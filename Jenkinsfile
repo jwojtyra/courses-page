@@ -13,11 +13,6 @@ pipeline {
       }
     }
 
-    stage('git cloning project') {
-      steps {
-        git branch: 'main', credentialsId: 'githubKubaCredential', url: 'git@github.com:cichy380/courses-page.git'
-      }
-    }
     stage('docker run nodejs') {
       agent {
         docker {
