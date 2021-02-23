@@ -1,6 +1,10 @@
 @import "../../../styles/abstracts/variables";
 
 
+:host {
+  display: block;
+}
+
 .courses__item {
   overflow: hidden;
   background: linear-gradient(45deg, map-get($mat-gray, 50), map-get($mat-gray, 100));

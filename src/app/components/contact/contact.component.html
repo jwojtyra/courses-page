@@ -1,0 +1,56 @@
+<section class="section">
+  <header class="section__header">
+    <h2 class="section__heading">Kontakt z nami</h2>
+    <p class="section__lead">W przypadku jakichkolwiek pytań lub wątpliwości zapraszamy do kontaktu.</p>
+  </header>
+
+  <div class="row">
+    <div class="col">
+      <article class="mb-6">
+        <div>Telefon</div>
+        <div class="heading-color font-size-lg font-weight-bold my-1">885-887-887</div>
+        <footer class="font-size-sm text-muted">
+          Poniedziałek-piątek 8:00-21:00 <br>
+          Sobota, niedziela 12:00-17:00
+        </footer>
+      </article>
+
+      <article class="mb-6">
+        <div>Email</div>
+        <div class="heading-color font-size-lg font-weight-bold my-1">info@szkoleniazprogramowania.pl</div>
+        <footer class="font-size-sm text-muted">
+          Na każdą wiadomość odpowiemy <br>
+          tak szybko jak to możliwe
+        </footer>
+      </article>
+
+      <p>
+        <a href="#" class="mr-5" matTooltip="Facebook">
+          <fa-icon [icon]="faFacebook" style="font-size:32px"></fa-icon>
+        </a>
+
+        <a href="#" class="mr-5" matTooltip="Github">
+          <fa-icon [icon]="faGithub" style="font-size:32px"></fa-icon>
+        </a>
+      </p>
+    </div>
+    <div class="col">
+        <mat-form-field class="w-100">
+          <mat-label>Adres email</mat-label>
+          <input matInput type="email" name="email">
+        </mat-form-field>
+
+        <mat-form-field class="w-100">
+          <mat-label>Numer telefonu</mat-label>
+          <input matInput type="tel" name="tel">
+        </mat-form-field>
+
+      <mat-form-field class="w-100">
+        <mat-label>Pytanie</mat-label>
+        <textarea matInput style="height: 6em"></textarea>
+      </mat-form-field>
+
+      <button type="button" mat-flat-button class="btn btn_primary">Wyślij</button>
+    </div>
+  </div>
+</section>

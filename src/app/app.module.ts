@@ -10,6 +10,8 @@ import { CoverComponent } from './components/cover/cover.component';
 import { AboutComponent } from './components/about/about.component';
 import { ServicesComponent } from './components/services/services.component';
 import { CoursesComponent } from './components/courses/courses.component';
+import { ContactComponent } from './components/contact/contact.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,9 +21,11 @@ import { CoursesComponent } from './components/courses/courses.component';
     AboutComponent,
     ServicesComponent,
     CoursesComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
     FontAwesomeModule,
