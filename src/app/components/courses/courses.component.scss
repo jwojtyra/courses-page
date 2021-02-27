@@ -41,3 +41,13 @@
   font-weight: $h4-font-weight;
   line-height: $h4-line-height;
 }
+
+.courses__icon-more {
+  height: 46px;
+  width: 46px;
+  font-size: 46px;
+  color: rgba($text-muted, .5);
+  border: 3px solid rgba($text-muted, .4);
+  box-sizing: content-box;
+  border-radius: 50%;
+}
