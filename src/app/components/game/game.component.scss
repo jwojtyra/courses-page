@@ -1,14 +1,28 @@
 @import "../../../styles/abstracts/variables";
+@import "~bootstrap/scss/mixins";
 
-$game-size: 270px;
-$game-square-space: 6px;
+$game-size: 206px;
+$game-square-space: 4px;
 $game-square-size: floor($game-size / 3) - (($game-square-space * 4) / 3);
+$game-icon-size: 38px;
+
+$game-size-xl: 270px;
+$game-square-space-xl: 6px;
+$game-square-size-xl: floor($game-size-xl / 3) - (($game-square-space-xl * 4) / 3);
+$game-icon-size-xl: 48px;
 
 :host {
   width: $game-size + ($game-square-space * 2);
   height: $game-size + ($game-square-space * 2);
   margin-left: -$game-square-space;
   margin-right: -$game-square-space;
+
+  @include media-breakpoint-up(xl) {
+    width: $game-size-xl + ($game-square-space-xl * 2);
+    height: $game-size-xl + ($game-square-space-xl * 2);
+    margin-left: -$game-square-space-xl;
+    margin-right: -$game-square-space-xl;
+  }
 }
 
 .game__square {
@@ -21,7 +35,14 @@ $game-square-size: floor($game-size / 3) - (($game-square-space * 4) / 3);
   margin: $game-square-space;
   border-radius: $border-radius;
   color: #fff;
-  font-size: 48px;
+  font-size: $game-icon-size;
+
+  @include media-breakpoint-up(xl) {
+    width: $game-square-size-xl;
+    height: $game-square-size-xl;
+    margin: $game-square-space-xl;
+    font-size: $game-icon-size-xl;
+  }
 }
 
 .game__square_pink {

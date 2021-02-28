@@ -84,7 +84,7 @@ $link-hover-decoration: underline;
 
 // Grid
 
-$grid-gutter-width: 32px;
+$grid-gutter-width: 18px;
 
 
 // Typography
@@ -110,6 +110,8 @@ $line-height-large: 1.71429;
 $h1-font-size: 44px;
 $h1-font-weight: 600;
 $h1-line-height: 46px;
+$h1-font-size-xs: 38px;
+$h1-line-height-xs: 40px;
 $h2-font-size: 32px;
 $h2-font-weight: 600;
 $h2-line-height: 38px;
@@ -137,6 +139,15 @@ $headings-color: rgba(#000, .94);
 $text-muted: map-get($mat-gray, 400);
 
 $paragraph-margin-bottom: $spacer;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
 
 // Components
 

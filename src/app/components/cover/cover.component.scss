@@ -1,5 +1,13 @@
+@import "~bootstrap/scss/mixins";
 @import "../../../styles/abstracts/variables";
 
 .cover__lead {
   font-size: $font-size-xl;
+}
+
+.cover__heading {
+  @include media-breakpoint-down(xs) {
+    font-size: $h1-font-size-xs;
+    line-height: $h1-line-height-xs;
+  }
 }

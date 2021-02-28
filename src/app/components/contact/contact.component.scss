@@ -1,6 +1,17 @@
+@import "~bootstrap/scss/mixins";
 @import "../../../styles/abstracts/variables";
 
 
 :host {
   display: block;
+}
+
+.contact__data {
+  color: $headings-color;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-lg;
+
+  @include media-breakpoint-down(xs) {
+    font-size: $font-size-base;
+  }
 }
