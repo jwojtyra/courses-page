@@ -7,6 +7,10 @@ body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 input,
 textarea,
 button,

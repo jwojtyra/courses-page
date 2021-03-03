@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {ViewportScroller} from '@angular/common';
 
 
 @Component({
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  constructor(private viewportScroller: ViewportScroller) {
+  }
+
+  public onClickNavItem(targetId: string): void {
+    this.viewportScroller.scrollToAnchor(targetId);
+  }
 }

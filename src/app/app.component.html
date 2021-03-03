@@ -5,9 +5,9 @@
         <div class="logo">&lt;/&gt;</div>
 
         <nav class="ml-5 header__nav d-none d-sm-block">
-          <a href="#">O nas</a>
-          <a href="#">Szkolenia</a>
-          <a href="#">Kontakt</a>
+          <a href="#onas" (click)="onClickNavItem('onas')">O nas</a>
+          <a href="#szkolenia" (click)="onClickNavItem('szkolenia')">Szkolenia</a>
+          <a href="#kontakt" (click)="onClickNavItem('kontakt')">Kontakt</a>
         </nav>
 
         <mat-icon class="ml-auto mr-2 d-none d-sm-block">phone</mat-icon>
@@ -20,10 +20,10 @@
 </div>
 
 <div class="container">
-  <app-services class="mt-n6" style="margin-bottom: 160px"></app-services>
-  <app-about style="margin-bottom: 160px"></app-about>
-  <app-courses style="margin-bottom: 160px"></app-courses>
-  <app-contact style="margin-bottom: 160px"></app-contact>
+  <app-services class="mt-n6" style="margin-bottom: 80px"></app-services>
+  <app-about id="onas" style="padding-top: 80px; padding-bottom: 56px"></app-about>
+  <app-courses id="szkolenia" style="padding-top: 80px; padding-bottom: 80px"></app-courses>
+  <app-contact id="kontakt" style="padding-top: 80px; padding-bottom: 160px"></app-contact>
 </div>
 
 <footer class="footer text-muted py-5">
