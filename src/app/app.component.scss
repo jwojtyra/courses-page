@@ -1,5 +1,10 @@
 @import "../styles/abstracts/variables";
 
+.app__sidenav {
+  width: 290px;
+  max-width: 100%;
+}
+
 .logo {
   display: inline-block;
   font-family: $font-family-logo;
@@ -19,6 +24,7 @@
     margin-right: map-get($spacers, 3);
     text-decoration: none;
     color: $body-color;
+    cursor: pointer;
   }
 }
 

@@ -8,10 +8,16 @@ import {ViewportScroller} from '@angular/common';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  public navItems: {label: string, anchor: string}[] = [
+    {label: 'O nas', anchor: 'onas'},
+    {label: 'Szkolenia', anchor: 'szkolenia'},
+    {label: 'Kontakt', anchor: 'kontakt'},
+  ];
+
   constructor(private viewportScroller: ViewportScroller) {
   }
 
-  public onClickNavItem(targetId: string): void {
-    this.viewportScroller.scrollToAnchor(targetId);
+  public onClickNavItem(anchor: string): void {
+    this.viewportScroller.scrollToAnchor(anchor);
   }
 }

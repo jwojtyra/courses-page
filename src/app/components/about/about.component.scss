@@ -23,3 +23,8 @@
     }
   }
 }
+
+.about__text-mark {
+  padding: 0 4px;
+  background-color: map-get($app-primary, 50);
+}

@@ -4,6 +4,7 @@
   line-height: 2.571428571 !important;
   padding: 0 16px !important;
   border-radius: $border-radius !important;
+  text-decoration: none !important;
 }
 
 .btn_lg {
@@ -15,4 +16,12 @@
 .btn_primary {
   color: #fff;
   background: linear-gradient(45deg, map-get($mat-purple, 300), map-get($mat-purple, 800));
+}
+
+.btn_green {
+  background: linear-gradient(45deg, map-get($mat-green, 500), map-get($mat-green, 600));
+
+  &, &:hover {
+    color: #fff;
+  }
 }
